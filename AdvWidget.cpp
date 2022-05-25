@@ -4,7 +4,7 @@
 
 using namespace std;
 
-CAdvWidget::CAdvWidget()
+CAdvWidget::CAdvWidget( const int& nInterval ) : CWidget( nInterval )
 {
     cout << "CAdvWidget " << this << " : constructor" << endl;
 }

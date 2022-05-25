@@ -12,13 +12,14 @@ CTimer( nInterval )
 
 void CWidget::CWidgetTimer::TickTock()
 {
+    cout << "CWidgetTimer::TickTock" << endl;
     CTimer::TickTock();
     CTimer::TickTock();
     cout << "CWidgetTimer " << this << " : time = " << m_nTime << endl;
 }
 
-CWidget::CWidget():
-m_Timer( 1 )
+CWidget::CWidget( const int& nInterval ):
+m_Timer( nInterval )
 {
     cout << "CWidget " << this << " : constructor" << endl;
 }

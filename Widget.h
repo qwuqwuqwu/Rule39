@@ -6,7 +6,7 @@
 class CWidget
 {
 public:
-    CWidget();
+    CWidget( const int & nInterval );
     virtual ~CWidget();
 
     virtual void op();

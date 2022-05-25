@@ -6,7 +6,7 @@ class CWidget;
 class CAdvWidget : public CWidget
 {
 public:
-    CAdvWidget();
+    CAdvWidget( const int& nInterval );
     ~CAdvWidget();
 
     void op();

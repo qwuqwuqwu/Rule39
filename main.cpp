@@ -6,15 +6,32 @@
 #include "AdvInheritWidget.h"
 #include <iostream>
 
+using namespace std;
+
 int main( void )
 {
-    CInheritWidget MyWidget( 1 );
-    MyWidget.op();
-    MyWidget.op();
+    cout << "InheritWidget example=========================" << endl;
+    CInheritWidget InheritWidget( 1 );
+    InheritWidget.op();
+    InheritWidget.op();
 
-    CAdvInheritWidget MyAdvInheritWidget( 2 );
-    MyAdvInheritWidget.op();
-    MyAdvInheritWidget.op();
+    cout << "CompositeWidget example=========================" << endl;
+    CWidget CompositeWidget( 2 );
+    CompositeWidget.op();
+    CompositeWidget.op();
+
+    // =============================
+    cout << "AdvInheritWidget example=========================" << endl;
+    CAdvInheritWidget AdvInheritWidget( 3 );
+    AdvInheritWidget.op();
+    AdvInheritWidget.op();
+
+    cout << "AdvCompositeWidget example=========================" << endl;
+    CAdvWidget AdvCompositeWidget( 4 );
+    AdvCompositeWidget.op();
+    AdvCompositeWidget.op();
+
+    cout << "Destructorsssssssssssssssssssssssssssssssssssssssss" << endl;
 
     return 0;
 }
